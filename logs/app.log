@@ -1,0 +1,904 @@
+2026-01-08 10:32:07,230 - __main__ - INFO - Starting Flask application
+2026-01-08 10:32:07,267 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 10:32:07,267 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 10:32:07,269 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:32:08,763 - __main__ - INFO - Starting Flask application
+2026-01-08 10:32:08,778 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:32:08,778 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:32:25,955 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:32:25] "GET / HTTP/1.1" 200 -
+2026-01-08 10:32:26,025 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:32:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-08 10:32:26,692 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:32:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-08 10:33:00,972 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:33:02,896 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:33:02,899 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:33:02] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:33:13,645 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:33:14,929 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:33:14,931 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:33:15,419 - modules.summarizer - ERROR - Error in Google summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 10:33:15,420 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:33:15] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 10:34:44,873 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:34:47,043 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:34:48,399 - __main__ - INFO - Starting Flask application
+2026-01-08 10:34:48,405 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:34:48,405 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:34:59,980 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:35:01,159 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:35:01,160 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:35:01,576 - modules.summarizer - ERROR - Error in Google summarization: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 10:35:01,577 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:35:01] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 10:35:56,358 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:35:58,557 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:36:00,085 - __main__ - INFO - Starting Flask application
+2026-01-08 10:36:00,091 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:36:00,092 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:36:00,111 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:36:01,364 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:36:01,365 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:36:01,944 - modules.summarizer - ERROR - Error in Google summarization: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 10:36:01,944 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:36:01] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 10:36:16,327 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:36:18,519 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:36:20,058 - __main__ - INFO - Starting Flask application
+2026-01-08 10:36:20,063 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:36:20,065 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:36:20,083 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:36:21,311 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:36:21,312 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:36:21,650 - modules.summarizer - ERROR - Error in Google summarization: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 10:36:21,651 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:36:21] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 10:37:16,043 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:37:18,221 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:37:20,269 - __main__ - INFO - Starting Flask application
+2026-01-08 10:37:20,275 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:37:20,277 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:37:20,296 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:37:21,500 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:37:21,501 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:37:29,795 - modules.summarizer - INFO - Summary generated successfully with Gemini
+2026-01-08 10:37:29,795 - __main__ - WARNING - Summary validation failed: Summary too long (max 1000 chars)
+2026-01-08 10:37:29,796 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:37:29] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:37:58,277 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:37:59,942 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:37:59,944 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:37:59] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:39:01,702 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:39:03,863 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:39:05,778 - __main__ - INFO - Starting Flask application
+2026-01-08 10:39:05,786 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:39:05,788 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:39:05,902 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:39:07,656 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:39:07,657 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:39:07] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:39:10,863 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:39:12,150 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:39:12,152 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:39:19,659 - modules.summarizer - INFO - Summary generated successfully with Gemini
+2026-01-08 10:39:19,659 - __main__ - WARNING - Summary validation failed: Summary too long (max 1000 chars)
+2026-01-08 10:39:19,660 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:39:19] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:39:29,642 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:39:31,305 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:39:31,305 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:39:31] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:40:11,706 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:40:13,884 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:40:15,542 - __main__ - INFO - Starting Flask application
+2026-01-08 10:40:15,550 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:40:15,552 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:40:30,830 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:40:30,990 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:40:32,401 - __main__ - INFO - Starting Flask application
+2026-01-08 10:40:32,401 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:40:32,401 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:40:59,901 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\quiz_generator.py', reloading
+2026-01-08 10:41:00,046 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:41:01,526 - __main__ - INFO - Starting Flask application
+2026-01-08 10:41:01,526 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:41:01,526 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:41:19,025 - __main__ - INFO - Starting Flask application
+2026-01-08 10:41:19,041 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 10:41:19,041 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 10:41:19,041 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:41:20,372 - __main__ - INFO - Starting Flask application
+2026-01-08 10:41:20,378 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:41:20,378 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:41:51,437 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:41:51] "GET / HTTP/1.1" 200 -
+2026-01-08 10:41:51,532 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:41:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 10:41:54,083 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:41:55,849 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:41:55,851 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:41:55] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:43:14,132 - __main__ - INFO - Processing URL: https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 10:43:15,770 - modules.scraper - INFO - Successfully scraped article from https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 10:43:15,771 - __main__ - INFO - Content extracted. Type: article, Length: 228879
+2026-01-08 10:43:25,288 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 10:43:25,288 - __main__ - WARNING - Summary validation failed: Summary too long (max 1000 chars)
+2026-01-08 10:43:25,288 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:43:25] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:44:46,304 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 10:44:48,466 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:44:50,117 - __main__ - INFO - Starting Flask application
+2026-01-08 10:44:50,117 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:44:50,117 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:45:20,532 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 10:45:20,686 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:45:22,101 - __main__ - INFO - Starting Flask application
+2026-01-08 10:45:22,117 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:45:22,117 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:47:18,744 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 10:47:18,892 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:47:20,225 - __main__ - INFO - Starting Flask application
+2026-01-08 10:47:20,229 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:47:20,229 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:47:40,202 - __main__ - INFO - Starting Flask application
+2026-01-08 10:47:40,217 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 10:47:40,217 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 10:47:40,217 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 10:47:41,601 - __main__ - INFO - Starting Flask application
+2026-01-08 10:47:41,601 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 10:47:41,601 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 10:47:44,426 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:47:44] "GET / HTTP/1.1" 200 -
+2026-01-08 10:47:44,508 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:47:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 10:47:52,256 - __main__ - INFO - Processing URL: https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 10:47:53,655 - modules.scraper - INFO - Successfully scraped article from https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 10:47:53,658 - __main__ - INFO - Content extracted. Type: article, Length: 228879
+2026-01-08 10:48:04,903 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 10:48:04,903 - __main__ - INFO - Summary generated. Length: 1305
+2026-01-08 10:48:16,173 - modules.quiz_generator - INFO - Quiz generated successfully with Gemini 2.5 Flash
+2026-01-08 10:48:16,174 - __main__ - INFO - Quiz generated with 5 questions
+2026-01-08 10:48:16,174 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:48:16] "POST /api/process-url HTTP/1.1" 200 -
+2026-01-08 10:51:43,453 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:51:43] "GET / HTTP/1.1" 200 -
+2026-01-08 10:51:43,479 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:51:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 10:51:44,717 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:51:44] "GET / HTTP/1.1" 200 -
+2026-01-08 10:51:45,036 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:51:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 10:52:02,253 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:52:04,026 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:52:04,028 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:52:04] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 10:52:33,740 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:52:33] "GET / HTTP/1.1" 200 -
+2026-01-08 10:52:33,767 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:52:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 10:52:36,052 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 10:52:37,243 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 10:52:37,245 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 10:52:44,825 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 10:52:44,825 - __main__ - INFO - Summary generated. Length: 1182
+2026-01-08 10:52:53,246 - modules.quiz_generator - INFO - Quiz generated successfully with Gemini 2.5 Flash
+2026-01-08 10:52:53,246 - __main__ - INFO - Quiz generated with 5 questions
+2026-01-08 10:52:53,246 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:52:53] "POST /api/process-url HTTP/1.1" 200 -
+2026-01-08 10:54:01,541 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 10:54:03,384 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 10:54:03,387 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 10:54:03] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:44:34,141 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 18:44:36,629 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:44:39,143 - __main__ - INFO - Starting Flask application
+2026-01-08 18:44:39,143 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:44:39,143 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:45:49,139 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 18:45:49,282 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:45:50,680 - __main__ - INFO - Starting Flask application
+2026-01-08 18:45:50,696 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:45:50,696 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:45:56,788 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 18:45:56,933 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:45:58,310 - __main__ - INFO - Starting Flask application
+2026-01-08 18:45:58,325 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:45:58,325 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:51:12,711 - __main__ - INFO - Starting Flask application
+2026-01-08 18:51:12,727 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 18:51:12,727 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 18:51:12,727 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:51:14,290 - __main__ - INFO - Starting Flask application
+2026-01-08 18:51:14,295 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:51:14,297 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:51:18,409 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:51:18] "GET / HTTP/1.1" 200 -
+2026-01-08 18:51:18,484 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:51:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:51:21,138 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 18:51:22,694 - modules.scraper - INFO - Found English transcript for video dQw4w9WgXcQ
+2026-01-08 18:51:23,185 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 18:51:23,187 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:51:23] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:51:53,512 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=_qVTjVjHXn0
+2026-01-08 18:51:54,301 - modules.scraper - WARNING - Transcripts are disabled for video _qVTjVjHXn0
+2026-01-08 18:51:54,301 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:51:54] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:51:59,767 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:51:59] "GET / HTTP/1.1" 200 -
+2026-01-08 18:52:00,073 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:52:02,705 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=_qVTjVjHXn0
+2026-01-08 18:52:03,843 - modules.scraper - WARNING - Transcripts are disabled for video _qVTjVjHXn0
+2026-01-08 18:52:03,844 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:03] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:52:21,126 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:21] "GET / HTTP/1.1" 200 -
+2026-01-08 18:52:21,436 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:52:23,686 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 18:52:25,146 - modules.scraper - INFO - Found English transcript for video jNQXAC9IVRw
+2026-01-08 18:52:25,699 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 18:52:25,700 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:25] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:52:34,176 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:34] "GET / HTTP/1.1" 200 -
+2026-01-08 18:52:34,490 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:52:36,558 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 18:52:38,242 - modules.scraper - INFO - Found English transcript for video dQw4w9WgXcQ
+2026-01-08 18:52:38,641 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 18:52:38,641 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:52:38] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 18:53:24,964 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:53:24] "GET / HTTP/1.1" 200 -
+2026-01-08 18:53:25,268 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:53:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:53:28,491 - __main__ - INFO - Processing URL: https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 18:53:29,747 - modules.scraper - INFO - Successfully scraped article from https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-08 18:53:29,747 - __main__ - INFO - Content extracted. Type: article, Length: 228879
+2026-01-08 18:53:45,282 - modules.summarizer - ERROR - Error in Google summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000, model: gemini-2.5-flash
+Please retry in 13.33747214s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, retry_delay {
+  seconds: 13
+}
+]
+2026-01-08 18:53:45,283 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:53:45] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 18:53:59,821 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 18:54:01,179 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 18:54:01,181 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 18:54:08,280 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 18:54:08,280 - __main__ - INFO - Summary generated. Length: 1050
+2026-01-08 18:54:11,812 - modules.quiz_generator - ERROR - Error in Google quiz generation: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 46.802614636s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2026-01-08 18:54:11,814 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:54:11] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 18:56:50,170 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 18:56:52,353 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:56:54,381 - __main__ - INFO - Starting Flask application
+2026-01-08 18:56:54,397 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:56:54,397 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:56:57,354 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:56:57] "GET / HTTP/1.1" 200 -
+2026-01-08 18:56:57,425 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:56:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 18:57:02,296 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 18:57:03,563 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 18:57:03,564 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 18:57:04,130 - modules.summarizer - ERROR - Error in Google summarization: 404 models/gemini-2.5-flash-native-audio-dialog is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 18:57:04,131 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:57:04] "[35m[1mPOST /api/process-url HTTP/1.1[0m" 500 -
+2026-01-08 18:57:21,818 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\summarizer.py', reloading
+2026-01-08 18:57:23,934 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 18:57:25,364 - __main__ - INFO - Starting Flask application
+2026-01-08 18:57:25,364 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 18:57:25,364 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 18:57:40,320 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-08 18:57:41,627 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-08 18:57:41,629 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-08 18:57:51,373 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 18:57:51,373 - __main__ - INFO - Summary generated. Length: 1114
+2026-01-08 18:58:03,503 - modules.quiz_generator - INFO - Quiz generated successfully with Gemini 2.5 Flash
+2026-01-08 18:58:03,504 - __main__ - INFO - Quiz generated with 5 questions
+2026-01-08 18:58:03,504 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:58:03] "POST /api/process-url HTTP/1.1" 200 -
+2026-01-08 18:59:02,014 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 18:59:03,539 - modules.scraper - INFO - Found English transcript for video ad79nYk2keg
+2026-01-08 18:59:03,924 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 18:59:03,926 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 18:59:03] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:01:48,925 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:01:51,092 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:01:52,636 - __main__ - INFO - Starting Flask application
+2026-01-08 19:01:52,643 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:01:52,644 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:01:57,267 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:01:57] "GET / HTTP/1.1" 200 -
+2026-01-08 19:01:57,355 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:01:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:02:07,355 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:02:07,355 - modules.scraper - INFO - Attempting to get transcript for video dQw4w9WgXcQ
+2026-01-08 19:02:07,357 - modules.scraper - INFO - Method 1: Trying YouTube Transcript API...
+2026-01-08 19:02:09,195 - modules.scraper - WARNING - YouTube API error: no element found: line 1, column 0
+2026-01-08 19:02:10,196 - modules.scraper - INFO - Method 2: Trying Supadata API...
+2026-01-08 19:02:10,967 - modules.scraper - WARNING - Supadata API returned 401
+2026-01-08 19:02:11,970 - modules.scraper - INFO - Method 3: Trying web scraping...
+2026-01-08 19:02:13,598 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:02:13] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:02:33,145 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 19:02:33,145 - modules.scraper - INFO - Attempting to get transcript for video ad79nYk2keg
+2026-01-08 19:02:33,145 - modules.scraper - INFO - Method 1: Trying YouTube Transcript API...
+2026-01-08 19:02:34,812 - modules.scraper - WARNING - YouTube API error: no element found: line 1, column 0
+2026-01-08 19:02:35,814 - modules.scraper - INFO - Method 2: Trying Supadata API...
+2026-01-08 19:02:36,287 - modules.scraper - WARNING - Supadata API returned 401
+2026-01-08 19:02:37,289 - modules.scraper - INFO - Method 3: Trying web scraping...
+2026-01-08 19:02:38,347 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:02:38] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:02:48,480 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:02:48,480 - modules.scraper - INFO - Attempting to get transcript for video jNQXAC9IVRw
+2026-01-08 19:02:48,480 - modules.scraper - INFO - Method 1: Trying YouTube Transcript API...
+2026-01-08 19:02:50,149 - modules.scraper - WARNING - YouTube API error: no element found: line 1, column 0
+2026-01-08 19:02:51,150 - modules.scraper - INFO - Method 2: Trying Supadata API...
+2026-01-08 19:02:51,603 - modules.scraper - WARNING - Supadata API returned 401
+2026-01-08 19:02:52,604 - modules.scraper - INFO - Method 3: Trying web scraping...
+2026-01-08 19:02:53,822 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:02:53] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:02:57,973 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=pjK-aVrqN_8
+2026-01-08 19:02:57,973 - modules.scraper - INFO - Attempting to get transcript for video pjK-aVrqN_8
+2026-01-08 19:02:57,973 - modules.scraper - INFO - Method 1: Trying YouTube Transcript API...
+2026-01-08 19:02:58,696 - modules.scraper - WARNING - YouTube API failed for pjK-aVrqN_8
+2026-01-08 19:02:59,697 - modules.scraper - INFO - Method 2: Trying Supadata API...
+2026-01-08 19:03:00,249 - modules.scraper - WARNING - Supadata API returned 401
+2026-01-08 19:03:01,250 - modules.scraper - INFO - Method 3: Trying web scraping...
+2026-01-08 19:03:02,146 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:03:02] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:03:47,953 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:03:47,953 - modules.scraper - INFO - Attempting to get transcript for video jNQXAC9IVRw
+2026-01-08 19:03:47,953 - modules.scraper - INFO - Method 1: Trying YouTube Transcript API...
+2026-01-08 19:03:49,594 - modules.scraper - WARNING - YouTube API error: no element found: line 1, column 0
+2026-01-08 19:03:50,596 - modules.scraper - INFO - Method 2: Trying Supadata API...
+2026-01-08 19:03:51,091 - modules.scraper - WARNING - Supadata API returned 401
+2026-01-08 19:03:52,093 - modules.scraper - INFO - Method 3: Trying web scraping...
+2026-01-08 19:03:53,363 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:03:53] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:04:41,220 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:04:41,370 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:04:43,283 - __main__ - INFO - Starting Flask application
+2026-01-08 19:04:43,299 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:04:43,299 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:04:53,183 - __main__ - INFO - Starting Flask application
+2026-01-08 19:04:53,187 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:04:53,187 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:04:53,187 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:04:54,698 - __main__ - INFO - Starting Flask application
+2026-01-08 19:04:54,704 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:04:54,705 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:04:55,535 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:04:55] "GET / HTTP/1.1" 200 -
+2026-01-08 19:04:55,628 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:04:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:04:57,366 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:04:57,366 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:04:57,367 - modules.scraper - INFO - Trying youtube-transcript.io for dQw4w9WgXcQ...
+2026-01-08 19:04:58,360 - modules.scraper - WARNING - youtube-transcript.io: No transcript found or empty response
+2026-01-08 19:04:58,862 - modules.scraper - INFO - Trying Supadata API for dQw4w9WgXcQ...
+2026-01-08 19:04:59,375 - modules.scraper - WARNING - Supadata API: Status 401
+2026-01-08 19:04:59,878 - modules.scraper - INFO - Trying alternative transcript service for dQw4w9WgXcQ...
+2026-01-08 19:05:01,501 - modules.scraper - WARNING - Alternative service error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-01-08 19:05:01,502 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:05:01] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:05:15,695 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=_qVTjVjHXn0
+2026-01-08 19:05:15,695 - modules.scraper - INFO - Processing YouTube video: _qVTjVjHXn0
+2026-01-08 19:05:15,695 - modules.scraper - INFO - Trying youtube-transcript.io for _qVTjVjHXn0...
+2026-01-08 19:05:16,529 - modules.scraper - WARNING - youtube-transcript.io: No transcript found or empty response
+2026-01-08 19:05:17,031 - modules.scraper - INFO - Trying Supadata API for _qVTjVjHXn0...
+2026-01-08 19:05:17,545 - modules.scraper - WARNING - Supadata API: Status 401
+2026-01-08 19:05:18,048 - modules.scraper - INFO - Trying alternative transcript service for _qVTjVjHXn0...
+2026-01-08 19:05:19,192 - modules.scraper - WARNING - Alternative service error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-01-08 19:05:19,192 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:05:19] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:05:23,391 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 19:05:23,392 - modules.scraper - INFO - Processing YouTube video: ad79nYk2keg
+2026-01-08 19:05:23,392 - modules.scraper - INFO - Trying youtube-transcript.io for ad79nYk2keg...
+2026-01-08 19:05:24,119 - modules.scraper - WARNING - youtube-transcript.io: No transcript found or empty response
+2026-01-08 19:05:24,621 - modules.scraper - INFO - Trying Supadata API for ad79nYk2keg...
+2026-01-08 19:05:25,108 - modules.scraper - WARNING - Supadata API: Status 401
+2026-01-08 19:05:25,610 - modules.scraper - INFO - Trying alternative transcript service for ad79nYk2keg...
+2026-01-08 19:05:26,732 - modules.scraper - WARNING - Alternative service error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-01-08 19:05:26,733 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:05:26] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:09:49,291 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:09:49,446 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:09:51,329 - __main__ - INFO - Starting Flask application
+2026-01-08 19:09:51,332 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:09:51,332 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:09:58,459 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:09:58,616 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:10:00,123 - __main__ - INFO - Starting Flask application
+2026-01-08 19:10:00,139 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:10:00,139 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:10:25,518 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:10:25,680 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:10:27,150 - __main__ - INFO - Starting Flask application
+2026-01-08 19:10:27,150 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:10:27,150 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:12:28,759 - __main__ - INFO - Starting Flask application
+2026-01-08 19:12:28,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:12:28,775 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:12:28,775 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:12:30,375 - __main__ - INFO - Starting Flask application
+2026-01-08 19:12:30,380 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:12:30,382 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:12:32,178 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:12:32] "GET / HTTP/1.1" 200 -
+2026-01-08 19:12:32,287 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:12:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:12:34,846 - __main__ - INFO - Processing URL: https://youtu.be/jNQXAC9IVRw
+2026-01-08 19:12:36,851 - modules.scraper - WARNING - English transcript failed: no element found: line 1, column 0
+2026-01-08 19:12:38,150 - modules.scraper - WARNING - Fallback attempt failed: 'TranscriptList' object has no attribute 'manually_created_transcripts'
+2026-01-08 19:12:39,335 - modules.scraper - WARNING - SerpAPI error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /search?engine=youtube_video_transcript&video_id=jNQXAC9IVRw&api_key=only_if_using_serpapi_as_fallback (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:12:39,335 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:12:39] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:12:55,729 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=_qVTjVjHXn0
+2026-01-08 19:12:56,493 - modules.scraper - WARNING - English transcript failed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_qVTjVjHXn0! This is most likely caused by:
+
+Subtitles are disabled for this video
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2026-01-08 19:12:57,291 - modules.scraper - WARNING - Fallback attempt failed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_qVTjVjHXn0! This is most likely caused by:
+
+Subtitles are disabled for this video
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2026-01-08 19:12:58,396 - modules.scraper - WARNING - SerpAPI error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /search?engine=youtube_video_transcript&video_id=_qVTjVjHXn0&api_key=only_if_using_serpapi_as_fallback (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:12:58,396 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:12:58] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:13:39,856 - __main__ - INFO - Processing URL: https://youtu.be/AAe_KuzE-Cs
+2026-01-08 19:13:41,539 - modules.scraper - WARNING - English transcript failed: no element found: line 1, column 0
+2026-01-08 19:13:42,799 - modules.scraper - WARNING - Fallback attempt failed: 'TranscriptList' object has no attribute 'manually_created_transcripts'
+2026-01-08 19:13:43,888 - modules.scraper - WARNING - SerpAPI error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /search?engine=youtube_video_transcript&video_id=AAe_KuzE-Cs&api_key=only_if_using_serpapi_as_fallback (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:13:43,889 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:13:43] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:17:59,479 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:17:59] "GET / HTTP/1.1" 200 -
+2026-01-08 19:17:59,502 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:17:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:18:01,796 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:18:03,995 - modules.scraper - WARNING - English transcript failed: no element found: line 1, column 0
+2026-01-08 19:18:05,474 - modules.scraper - WARNING - Fallback attempt failed: 'TranscriptList' object has no attribute 'manually_created_transcripts'
+2026-01-08 19:18:06,559 - modules.scraper - WARNING - SerpAPI error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /search?engine=youtube_video_transcript&video_id=dQw4w9WgXcQ&api_key=only_if_using_serpapi_as_fallback (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:18:06,560 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:18:06] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:21:20,959 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:21:21,148 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:21:23,633 - __main__ - INFO - Starting Flask application
+2026-01-08 19:21:23,642 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:21:23,644 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:21:42,935 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:21:43,097 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:21:44,579 - __main__ - INFO - Starting Flask application
+2026-01-08 19:21:44,595 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:21:44,595 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:22:00,851 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:22:01,010 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:22:02,584 - __main__ - INFO - Starting Flask application
+2026-01-08 19:22:02,584 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:22:02,584 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:22:12,767 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:22:12,911 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:22:14,294 - __main__ - INFO - Starting Flask application
+2026-01-08 19:22:14,298 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:22:14,298 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:22:20,401 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 19:22:20,574 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:22:22,089 - __main__ - INFO - Starting Flask application
+2026-01-08 19:22:22,105 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:22:22,105 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:22:39,488 - __main__ - INFO - Starting Flask application
+2026-01-08 19:22:39,504 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:22:39,504 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:22:39,519 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:22:41,314 - __main__ - INFO - Starting Flask application
+2026-01-08 19:22:41,320 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:22:41,321 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:22:43,176 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:22:43] "GET / HTTP/1.1" 200 -
+2026-01-08 19:22:43,260 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:22:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:22:46,146 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:22:46,146 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:22:46,148 - modules.scraper - INFO - Fetching transcript via SERP API for dQw4w9WgXcQ...
+2026-01-08 19:22:46,219 - modules.scraper - ERROR - SERP API error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /run?engine=youtube_video_transcript&video_id=dQw4w9WgXcQ&api_key=7c2823370f856b557037550536813ccba3c13679e71afecfd88f0fc84ce06186 (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:22:46,220 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:22:46] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:22:52,799 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=_qVTjVjHXn0
+2026-01-08 19:22:52,801 - modules.scraper - INFO - Processing YouTube video: _qVTjVjHXn0
+2026-01-08 19:22:52,801 - modules.scraper - INFO - Fetching transcript via SERP API for _qVTjVjHXn0...
+2026-01-08 19:22:52,927 - modules.scraper - ERROR - SERP API error: HTTPSConnectionPool(host='api.serpapi.com', port=443): Max retries exceeded with url: /run?engine=youtube_video_transcript&video_id=_qVTjVjHXn0&api_key=7c2823370f856b557037550536813ccba3c13679e71afecfd88f0fc84ce06186 (Caused by NameResolutionError("HTTPSConnection(host='api.serpapi.com', port=443): Failed to resolve 'api.serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-01-08 19:22:52,928 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:22:52] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:28:05,362 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:28:05,497 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:39:38,128 - __main__ - INFO - Starting Flask application
+2026-01-08 19:39:38,146 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:39:38,146 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:39:38,146 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:39:39,639 - __main__ - INFO - Starting Flask application
+2026-01-08 19:39:39,639 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:39:39,639 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:39:42,584 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:39:42] "GET / HTTP/1.1" 200 -
+2026-01-08 19:39:42,689 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:39:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:39:45,806 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:39:47,578 - modules.scraper - ERROR - Error getting YouTube transcript: no element found: line 1, column 0
+2026-01-08 19:39:47,580 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:39:47] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:41:07,167 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:41:07,312 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:43:25,885 - __main__ - INFO - Starting Flask application
+2026-01-08 19:43:25,903 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:43:25,903 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:43:25,903 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:43:27,457 - __main__ - INFO - Starting Flask application
+2026-01-08 19:43:27,466 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:43:27,481 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:43:32,393 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:32] "GET / HTTP/1.1" 200 -
+2026-01-08 19:43:32,466 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:43:35,825 - __main__ - INFO - Processing URL: https://youtu.be/jNQXAC9IVRw
+2026-01-08 19:43:35,826 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:43:35,826 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:43:35,827 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:35] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:43:37,950 - __main__ - INFO - Processing URL: https://youtu.be/jNQXAC9IVRw
+2026-01-08 19:43:37,950 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:43:37,951 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:43:37,951 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:37] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:43:42,453 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:43:42,453 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:43:42,454 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:43:42,454 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:42] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:43:43,545 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:43:43,546 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:43:43,546 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:43:43,546 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:43:43] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:46:14,965 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:46:15,115 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:46:17,092 - __main__ - INFO - Starting Flask application
+2026-01-08 19:46:17,105 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:46:17,105 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:46:21,862 - __main__ - INFO - Starting Flask application
+2026-01-08 19:46:21,878 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:46:21,878 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:46:21,878 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:46:23,441 - __main__ - INFO - Starting Flask application
+2026-01-08 19:46:23,462 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:46:23,463 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:46:25,418 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:46:25] "GET / HTTP/1.1" 200 -
+2026-01-08 19:46:25,489 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:46:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:46:29,177 - __main__ - INFO - Processing URL: https://youtu.be/jNQXAC9IVRw
+2026-01-08 19:46:29,177 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:46:29,177 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:46:30,447 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 19:46:30,914 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 19:46:30,916 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:46:30] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:46:38,231 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:46:38,232 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:46:38,232 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:46:40,134 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 19:46:40,508 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 19:46:40,510 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:46:40] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:49:24,182 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:49:24,355 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:49:25,926 - __main__ - INFO - Starting Flask application
+2026-01-08 19:49:25,926 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:49:25,926 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:50:34,536 - __main__ - INFO - Starting Flask application
+2026-01-08 19:50:34,536 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:50:34,536 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:50:34,552 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:50:36,013 - __main__ - INFO - Starting Flask application
+2026-01-08 19:50:36,029 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:50:36,029 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:50:40,323 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:50:40] "GET / HTTP/1.1" 200 -
+2026-01-08 19:50:40,396 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:50:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:50:42,531 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:50:42,532 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:50:42,532 - modules.scraper - INFO - Attempting to fetch transcript...
+2026-01-08 19:50:44,333 - modules.scraper - ERROR - Transcript fetch error: no element found: line 1, column 0
+2026-01-08 19:50:44,334 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:50:44] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:51:41,950 - __main__ - INFO - Starting Flask application
+2026-01-08 19:51:41,966 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:51:41,966 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:51:41,966 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:51:43,572 - __main__ - INFO - Starting Flask application
+2026-01-08 19:51:43,577 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:51:43,579 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:51:44,253 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:51:44] "GET / HTTP/1.1" 200 -
+2026-01-08 19:51:44,318 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:51:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:51:46,295 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:51:46,297 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:51:46,297 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:51:46,298 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:51:46] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:51:59,096 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 19:51:59,097 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:51:59,097 - modules.scraper - ERROR - Transcript error: youtubetranscriptapi() takes no arguments
+2026-01-08 19:51:59,097 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:51:59] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:52:31,338 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:52:31,497 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:52:33,040 - __main__ - INFO - Starting Flask application
+2026-01-08 19:52:33,040 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:52:33,040 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:52:37,007 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:52:37] "GET / HTTP/1.1" 200 -
+2026-01-08 19:52:37,067 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:52:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:52:38,433 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:52:38,434 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:52:38,434 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:52:40,362 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 19:52:40,840 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 19:52:40,842 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:52:40] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:54:30,357 - __main__ - INFO - Starting Flask application
+2026-01-08 19:54:30,369 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 19:54:30,369 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 19:54:30,369 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:54:31,812 - __main__ - INFO - Starting Flask application
+2026-01-08 19:54:31,818 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:54:31,820 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:54:31,843 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:54:31] "GET / HTTP/1.1" 200 -
+2026-01-08 19:54:31,908 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:54:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:54:33,986 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:54:33,987 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:54:33,987 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:54:33,987 - modules.scraper - ERROR - Transcript error: type object 'youtubetranscriptapi' has no attribute 'list_transcripts'
+2026-01-08 19:54:33,988 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:54:33] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:54:45,641 - __main__ - INFO - Processing URL: https://youtu.be/jNQXAC9IVRw
+2026-01-08 19:54:45,641 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 19:54:45,641 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:54:45,641 - modules.scraper - ERROR - Transcript error: type object 'youtubetranscriptapi' has no attribute 'list_transcripts'
+2026-01-08 19:54:45,641 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:54:45] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:56:31,507 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:56:31,712 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:56:33,381 - __main__ - INFO - Starting Flask application
+2026-01-08 19:56:33,381 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:56:33,381 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 19:56:37,536 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:56:37] "GET / HTTP/1.1" 200 -
+2026-01-08 19:56:37,611 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:56:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 19:56:39,684 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 19:56:39,685 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 19:56:39,686 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 19:56:39,686 - modules.scraper - ERROR - Transcript error: type object 'youtubetranscriptapi' has no attribute 'list_transcripts'
+2026-01-08 19:56:39,687 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 19:56:39] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 19:57:00,993 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 19:57:01,133 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 19:57:02,809 - __main__ - INFO - Starting Flask application
+2026-01-08 19:57:02,817 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 19:57:02,817 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:00:03,663 - __main__ - INFO - Starting Flask application
+2026-01-08 20:00:03,679 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 20:00:03,679 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 20:00:03,679 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 20:00:05,127 - __main__ - INFO - Starting Flask application
+2026-01-08 20:00:05,143 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 20:00:05,143 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:00:12,097 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:00:12] "GET / HTTP/1.1" 200 -
+2026-01-08 20:00:12,161 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:00:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:00:14,532 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 20:00:14,533 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 20:00:14,533 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:00:14,534 - modules.scraper - ERROR - Transcript error: type object 'youtubetranscriptapi' has no attribute 'list_transcripts'
+2026-01-08 20:00:14,534 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:00:14] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:01:48,057 - __main__ - INFO - Starting Flask application
+2026-01-08 20:01:48,067 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 20:01:48,067 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 20:01:48,067 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 20:01:49,862 - __main__ - INFO - Starting Flask application
+2026-01-08 20:01:49,866 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 20:01:49,868 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:01:50,962 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:01:50] "GET / HTTP/1.1" 200 -
+2026-01-08 20:01:51,032 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:01:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:01:53,117 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 20:01:53,117 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 20:01:53,118 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:01:55,040 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 20:01:55,148 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 20:01:55,149 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:01:55] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:03:45,313 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 20:03:45,471 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 20:03:47,218 - __main__ - INFO - Starting Flask application
+2026-01-08 20:03:47,218 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 20:03:47,218 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:03:49,718 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:03:49] "GET / HTTP/1.1" 200 -
+2026-01-08 20:03:49,793 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:03:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:03:52,232 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 20:03:52,233 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 20:03:52,233 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:03:54,180 - modules.scraper - INFO - AAAAA
+2026-01-08 20:03:54,180 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 20:03:54,274 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 20:03:54,275 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:03:54] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:10:10,537 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 20:10:10,680 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 20:10:12,448 - __main__ - INFO - Starting Flask application
+2026-01-08 20:10:12,456 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 20:10:12,456 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:10:18,098 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:10:18] "GET / HTTP/1.1" 200 -
+2026-01-08 20:10:18,174 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:10:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:10:20,422 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 20:10:20,423 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 20:10:20,423 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:10:22,058 - modules.scraper - INFO - AAAAA
+2026-01-08 20:10:22,058 - modules.scraper - INFO - en ("English")[TRANSLATABLE]
+2026-01-08 20:10:22,058 - modules.scraper - INFO - BBBBB
+2026-01-08 20:10:22,059 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 20:10:22,165 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 20:10:22,166 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:10:22] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:14:17,079 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:14:17] "GET / HTTP/1.1" 200 -
+2026-01-08 20:14:17,105 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:14:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:14:18,836 - __main__ - INFO - Processing URL: https://youtu.be/-AP1nNK3bRs
+2026-01-08 20:14:18,836 - modules.scraper - INFO - Processing YouTube video: -AP1nNK3bRs
+2026-01-08 20:14:18,836 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:14:20,243 - modules.scraper - ERROR - Transcript error: 
+could not retrieve a transcript for the video https://www.youtube.com/watch?v=-ap1nnk3brs! this is most likely caused by:
+
+subtitles are disabled for this video
+
+if you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. also make sure that there are no open issues which already describe your problem!
+2026-01-08 20:14:20,245 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:14:20] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:15:27,182 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:15:27] "GET / HTTP/1.1" 200 -
+2026-01-08 20:15:27,207 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:15:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 20:15:32,244 - __main__ - INFO - Processing URL: https://youtu.be/YxcTBB6_bws
+2026-01-08 20:15:32,244 - modules.scraper - INFO - Processing YouTube video: YxcTBB6_bws
+2026-01-08 20:15:32,244 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:15:33,691 - modules.scraper - INFO - AAAAA
+2026-01-08 20:15:33,691 - modules.scraper - INFO - en ("English (auto-generated)")[TRANSLATABLE]
+2026-01-08 20:15:33,691 - modules.scraper - INFO - BBBBB
+2026-01-08 20:15:33,691 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 20:15:33,800 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 20:15:33,801 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:15:33] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 20:16:05,800 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 20:16:05,959 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 20:16:07,754 - __main__ - INFO - Starting Flask application
+2026-01-08 20:16:07,754 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 20:16:07,754 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 20:16:11,670 - __main__ - INFO - Processing URL: https://youtu.be/YxcTBB6_bws
+2026-01-08 20:16:11,671 - modules.scraper - INFO - Processing YouTube video: YxcTBB6_bws
+2026-01-08 20:16:11,671 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 20:16:13,393 - modules.scraper - INFO - AAAAA
+2026-01-08 20:16:13,394 - modules.scraper - INFO - en ("English (auto-generated)")[TRANSLATABLE]
+2026-01-08 20:16:13,394 - modules.scraper - INFO - BBBBB
+2026-01-08 20:16:13,394 - modules.scraper - INFO - Fetching transcript data...
+2026-01-08 20:16:13,502 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 20:16:13,503 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 20:16:13] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 21:53:16,956 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 21:53:17,321 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 21:53:19,567 - __main__ - INFO - Starting Flask application
+2026-01-08 21:53:19,583 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 21:53:19,583 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 21:53:24,954 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 21:53:24] "GET / HTTP/1.1" 200 -
+2026-01-08 21:53:25,047 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 21:53:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 21:53:27,162 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 21:53:27,162 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 21:53:27,162 - modules.scraper - INFO - Fetching available transcripts...
+2026-01-08 21:53:28,600 - modules.scraper - INFO - AAAAA
+2026-01-08 21:53:28,600 - modules.scraper - INFO - en ("English")[TRANSLATABLE]
+2026-01-08 21:53:28,600 - modules.scraper - INFO - BBBBB
+2026-01-08 21:53:30,079 - modules.scraper - ERROR - Transcript error: no element found: line 1, column 0
+2026-01-08 21:53:30,079 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 21:53:30] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:05:26,885 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 22:05:27,124 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 22:05:29,170 - __main__ - INFO - Starting Flask application
+2026-01-08 22:05:29,170 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 22:05:29,170 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 22:05:34,266 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\config.py', reloading
+2026-01-08 22:05:34,426 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 22:05:35,854 - __main__ - INFO - Starting Flask application
+2026-01-08 22:05:35,854 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 22:05:35,854 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 22:06:32,736 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 22:06:32,888 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 22:06:34,367 - __main__ - INFO - Starting Flask application
+2026-01-08 22:06:34,367 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 22:06:34,382 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 22:06:51,399 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:06:51] "GET / HTTP/1.1" 200 -
+2026-01-08 22:06:51,474 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:06:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 22:06:53,538 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 22:06:53,539 - modules.scraper - INFO - Processing YouTube video: ad79nYk2keg
+2026-01-08 22:06:53,540 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:06:54,397 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:06:54,397 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:06:54,399 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:06:54] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:08:42,831 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2026-01-08 22:08:42,831 - modules.scraper - INFO - Processing YouTube video: jNQXAC9IVRw
+2026-01-08 22:08:42,833 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:08:43,557 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:08:43,557 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:08:43,559 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:08:43] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:08:48,128 - __main__ - INFO - Processing URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2026-01-08 22:08:48,128 - modules.scraper - INFO - Processing YouTube video: dQw4w9WgXcQ
+2026-01-08 22:08:48,128 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:08:48,930 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:08:48,931 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:08:48,932 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:08:48] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:08:55,641 - __main__ - INFO - Processing URL: https://youtu.be/-AP1nNK3bRs
+2026-01-08 22:08:55,642 - modules.scraper - INFO - Processing YouTube video: -AP1nNK3bRs
+2026-01-08 22:08:55,642 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:08:56,504 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:08:56,505 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:08:56,506 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:08:56] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:10:13,017 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:10:13] "GET / HTTP/1.1" 200 -
+2026-01-08 22:10:13,044 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:10:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 22:10:20,856 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 22:10:20,856 - modules.scraper - INFO - Processing YouTube video: ad79nYk2keg
+2026-01-08 22:10:20,857 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:10:21,732 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:10:21,733 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:10:21,734 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:10:21] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:11:02,204 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:11:02] "GET / HTTP/1.1" 200 -
+2026-01-08 22:11:02,228 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:11:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 22:11:04,799 - __main__ - INFO - Processing URL: https://youtu.be/YxcTBB6_bws
+2026-01-08 22:11:04,799 - modules.scraper - INFO - Processing YouTube video: YxcTBB6_bws
+2026-01-08 22:11:04,799 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:11:05,568 - modules.scraper - INFO - API Response Status: 401
+2026-01-08 22:11:05,568 - modules.scraper - ERROR - API Error 401: missing_authentication: Unauthorized, please provide a valid API token
+2026-01-08 22:11:05,569 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:11:05] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:18:19,755 - werkzeug - INFO -  * Detected change in 'D:\\mca_project\\modules\\scraper.py', reloading
+2026-01-08 22:18:20,040 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 22:18:22,544 - __main__ - INFO - Starting Flask application
+2026-01-08 22:18:22,553 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 22:18:22,560 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 22:18:26,019 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:18:26] "GET / HTTP/1.1" 200 -
+2026-01-08 22:18:26,141 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:18:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 22:18:29,267 - __main__ - INFO - Processing URL: https://youtu.be/ad79nYk2keg
+2026-01-08 22:18:29,268 - modules.scraper - INFO - Processing YouTube video: ad79nYk2keg
+2026-01-08 22:18:29,268 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:18:30,267 - modules.scraper - INFO - API Response Status: 200
+2026-01-08 22:18:30,311 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:18:30] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:18:36,975 - __main__ - INFO - Processing URL: https://youtu.be/YxcTBB6_bws
+2026-01-08 22:18:36,975 - modules.scraper - INFO - Processing YouTube video: YxcTBB6_bws
+2026-01-08 22:18:36,975 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:18:39,422 - modules.scraper - INFO - API Response Status: 200
+2026-01-08 22:18:39,428 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:18:39] "[31m[1mPOST /api/process-url HTTP/1.1[0m" 400 -
+2026-01-08 22:43:42,269 - __main__ - INFO - Starting Flask application
+2026-01-08 22:43:42,292 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.177:5000
+2026-01-08 22:43:42,292 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-08 22:43:42,294 - werkzeug - INFO -  * Restarting with stat
+2026-01-08 22:43:43,906 - __main__ - INFO - Starting Flask application
+2026-01-08 22:43:43,914 - werkzeug - WARNING -  * Debugger is active!
+2026-01-08 22:43:43,918 - werkzeug - INFO -  * Debugger PIN: 248-460-479
+2026-01-08 22:43:43,958 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:43:43] "GET / HTTP/1.1" 200 -
+2026-01-08 22:43:44,108 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:43:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-08 22:43:51,464 - __main__ - INFO - Processing URL: https://youtu.be/YxcTBB6_bws
+2026-01-08 22:43:51,465 - modules.scraper - INFO - Processing YouTube video: YxcTBB6_bws
+2026-01-08 22:43:51,465 - modules.scraper - INFO - Calling youtube-transcript.io API...
+2026-01-08 22:43:52,369 - modules.scraper - INFO - API Response Status: 200
+2026-01-08 22:43:52,370 - modules.scraper - INFO - API Response keys: <class 'list'>
+2026-01-08 22:43:52,370 - modules.scraper - INFO - Transcript item keys: dict_keys(['text', 'id', 'title', 'microformat', 'tracks', 'isLive', 'languages', 'isLoginRequired', 'playabilityStatus', 'author', 'channelId', 'keywords'])
+2026-01-08 22:43:52,370 - modules.scraper - INFO - Found text in transcript_item['text']
+2026-01-08 22:43:52,413 - __main__ - INFO - Content extracted. Type: video, Length: 4656
+2026-01-08 22:44:02,584 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-08 22:44:02,584 - __main__ - INFO - Summary generated. Length: 1187
+2026-01-08 22:44:10,782 - modules.quiz_generator - INFO - Quiz generated successfully with Gemini 2.5 Flash
+2026-01-08 22:44:10,782 - __main__ - INFO - Quiz generated with 5 questions
+2026-01-08 22:44:10,782 - werkzeug - INFO - 127.0.0.1 - - [08/Jan/2026 22:44:10] "POST /api/process-url HTTP/1.1" 200 -
+2026-01-09 08:47:27,122 - werkzeug - INFO - 127.0.0.1 - - [09/Jan/2026 08:47:27] "GET / HTTP/1.1" 200 -
+2026-01-09 08:47:27,250 - werkzeug - INFO - 127.0.0.1 - - [09/Jan/2026 08:47:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-09 09:42:29,723 - __main__ - INFO - Processing URL: https://blog.google/technology/ai/
+2026-01-09 09:42:31,092 - modules.scraper - INFO - Successfully scraped article from https://blog.google/technology/ai/
+2026-01-09 09:42:31,094 - __main__ - INFO - Content extracted. Type: article, Length: 4501
+2026-01-09 09:42:38,449 - modules.summarizer - INFO - Summary generated successfully with Gemini 2.5 Flash
+2026-01-09 09:42:38,450 - __main__ - INFO - Summary generated. Length: 1093
+2026-01-09 09:42:46,743 - modules.quiz_generator - INFO - Quiz generated successfully with Gemini 2.5 Flash
+2026-01-09 09:42:46,744 - __main__ - INFO - Quiz generated with 5 questions
+2026-01-09 09:42:46,746 - werkzeug - INFO - 127.0.0.1 - - [09/Jan/2026 09:42:46] "POST /api/process-url HTTP/1.1" 200 -

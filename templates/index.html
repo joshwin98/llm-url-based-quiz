@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <section class="hero">
+        <h1>📚 Unified Learning Platform</h1>
+        <p>Transform any article or YouTube video into interactive learning modules</p>
+    </section>
+
+    <section class="input-section">
+        <div class="card">
+            <h2>Enter Content URL</h2>
+            <form id="urlForm" class="url-form">
+                <div class="form-group">
+                    <label for="urlInput">Paste Article or YouTube URL:</label>
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        name="url" 
+                        placeholder="https://example.com/article or https://youtube.com/watch?v=..." 
+                        required
+                    >
+                    <small>Supported: Blog posts, news articles, YouTube videos</small>
+                </div>
+                
+                <button type="submit" id="submitBtn" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Generate Summary & Quiz
+                </button>
+            </form>
+
+            <div id="loadingSpinner" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Processing your content... This may take 30-60 seconds</p>
+            </div>
+
+            <div id="errorAlert" class="alert alert-error hidden"></div>
+            <div id="successAlert" class="alert alert-success hidden"></div>
+        </div>
+    </section>
+
+    <section id="resultsSection" class="results-section hidden">
+        <div class="results-container">
+            <!-- Summary Section -->
+            <div class="card results-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-file-alt"></i> Summary</h2>
+                    <button class="btn btn-sm btn-outline" id="copySummaryBtn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="card-body">
+                    <p id="summaryContent" class="summary-text"></p>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div class="card results-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Interactive Quiz</h2>
+                    <span class="badge" id="quizScore">Score: 0%</span>
+                </div>
+                <div class="card-body" id="quizContainer"></div>
+                <div class="card-footer">
+                    <button type="button" id="submitQuizBtn" class="btn btn-primary">
+                        <i class="fas fa-check"></i> Submit Quiz
+                    </button>
+                    <button type="button" id="resetQuizBtn" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Reset Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutSection" class="about-section">
+        <div class="card">
+            <h2>About This Project</h2>
+            <ul class="features-list">
+                <li><strong>🔗 URL Input:</strong> Paste any article or YouTube video link</li>
+                <li><strong>📖 Smart Summarization:</strong> AI-powered summaries using advanced LLMs</li>
+                <li><strong>❓ Auto Quiz Generation:</strong> RAG-driven interactive quizzes</li>
+                <li><strong>🛡️ Safety Guardrails:</strong> Content validation and educational standards</li>
+                <li><strong>🎯 Multiple Question Types:</strong> Multiple choice, True/False, Fill-in-the-blank</li>
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const urlForm = document.getElementById('urlForm');
+    const urlInput = document.getElementById('urlInput');
+    const submitBtn = document.getElementById('submitBtn');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    const errorAlert = document.getElementById('errorAlert');
+    const successAlert = document.getElementById('successAlert');
+    const resultsSection = document.getElementById('resultsSection');
+
+    let quizData = [];
+    let userAnswers = {};
+
+    urlForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await processURL();
+    });
+
+    async function processURL() {
+        const url = urlInput.value.trim();
+        
+        if (!url) {
+            showError('Please enter a valid URL');
+            return;
+        }
+
+        // Reset UI
+        hideError();
+        hideSuccess();
+        resultsSection.classList.add('hidden');
+        
+        // Show loading
+        loadingSpinner.classList.remove('hidden');
+        submitBtn.disabled = true;
+
+        try {
+            const response = await axios.post('/api/process-url', { url });
+            
+            if (response.data.status === 'success') {
+                displayResults(response.data.data);
+                showSuccess('Content processed successfully!');
+                resultsSection.classList.remove('hidden');
+                setTimeout(() => {
+                    document.querySelector('.results-section').scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        } catch (error) {
+            const errorMsg = error.response?.data?.message || error.message || 'Failed to process URL';
+            showError(errorMsg);
+            console.error('Error:', error);
+        } finally {
+            loadingSpinner.classList.add('hidden');
+            submitBtn.disabled = false;
+        }
+    }
+
+    function displayResults(data) {
+        // Display summary
+        document.getElementById('summaryContent').textContent = data.summary;
+        
+        // Display quiz
+        quizData = data.quiz;
+        userAnswers = {};
+        renderQuiz();
+    }
+
+    function renderQuiz() {
+        const quizContainer = document.getElementById('quizContainer');
+        quizContainer.innerHTML = '';
+
+        quizData.forEach((question) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = 'quiz-question';
+            questionDiv.id = `question-${question.id}`;
+
+            let questionHTML = `
+                <h3>${question.id}. ${question.question}</h3>
+                <div class="question-type">Type: ${question.type}</div>
+            `;
+
+            if (question.type === 'multiple_choice') {
+                questionHTML += '<div class="options">';
+                question.options.forEach((option, idx) => {
+                    const id = `q${question.id}-opt${idx}`;
+                    questionHTML += `
+                        <label class="option">
+                            <input type="radio" name="q${question.id}" value="${option}" data-question-id="${question.id}">
+                            <span>${option}</span>
+                        </label>
+                    `;
+                });
+                questionHTML += '</div>';
+            } else if (question.type === 'true_false') {
+                questionHTML += `
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q${question.id}" value="true" data-question-id="${question.id}">
+                            <span>True</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q${question.id}" value="false" data-question-id="${question.id}">
+                            <span>False</span>
+                        </label>
+                    </div>
+                `;
+            } else if (question.type === 'fill_blank') {
+                questionHTML += `
+                    <input type="text" 
+                        class="fill-blank-input" 
+                        placeholder="Type your answer here" 
+                        data-question-id="${question.id}">
+                `;
+            }
+
+            questionDiv.innerHTML = questionHTML;
+            quizContainer.appendChild(questionDiv);
+        });
+
+        // Add event listeners
+        document.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.addEventListener('change', (e) => {
+                userAnswers[e.target.getAttribute('data-question-id')] = e.target.value;
+            });
+        });
+
+        document.querySelectorAll('.fill-blank-input').forEach(input => {
+            input.addEventListener('change', (e) => {
+                userAnswers[e.target.getAttribute('data-question-id')] = e.target.value;
+            });
+        });
+    }
+
+    document.getElementById('submitQuizBtn').addEventListener('click', evaluateQuiz);
+    document.getElementById('resetQuizBtn').addEventListener('click', () => {
+        renderQuiz();
+        userAnswers = {};
+        document.getElementById('quizScore').textContent = 'Score: 0%';
+    });
+
+    function evaluateQuiz() {
+        let correct = 0;
+        let total = quizData.length;
+
+        quizData.forEach((question) => {
+            const userAnswer = userAnswers[question.id];
+            const correctAnswer = String(question.correct_answer).toLowerCase();
+            const isCorrect = String(userAnswer).toLowerCase() === correctAnswer;
+
+            const questionDiv = document.getElementById(`question-${question.id}`);
+            
+            if (isCorrect) {
+                correct++;
+                questionDiv.classList.add('correct');
+            } else {
+                questionDiv.classList.add('incorrect');
+                const feedbackDiv = document.createElement('div');
+                feedbackDiv.className = 'feedback';
+                feedbackDiv.innerHTML = `
+                    <p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+                    <p><strong>Explanation:</strong> ${question.explanation}</p>
+                `;
+                questionDiv.appendChild(feedbackDiv);
+            }
+        });
+
+        const score = Math.round((correct / total) * 100);
+        document.getElementById('quizScore').textContent = `Score: ${score}%`;
+        
+        // Disable inputs after submission
+        document.querySelectorAll('input[type="radio"], .fill-blank-input').forEach(input => {
+            input.disabled = true;
+        });
+    }
+
+    document.getElementById('copySummaryBtn').addEventListener('click', () => {
+        const summary = document.getElementById('summaryContent').textContent;
+        navigator.clipboard.writeText(summary);
+        alert('Summary copied to clipboard!');
+    });
+
+    function showError(message) {
+        errorAlert.textContent = message;
+        errorAlert.classList.remove('hidden');
+    }
+
+    function hideError() {
+        errorAlert.classList.add('hidden');
+    }
+
+    function showSuccess(message) {
+        successAlert.textContent = message;
+        successAlert.classList.remove('hidden');
+        setTimeout(() => hideSuccess(), 3000);
+    }
+
+    function hideSuccess() {
+        successAlert.classList.add('hidden');
+    }
+</script>
+{% endblock %}

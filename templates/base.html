@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}URL Summarization & Quiz Generator{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-book-reader"></i>
+                <span>AI Learning Assistant</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+        <p>&copy; 2026 URL Summarization & Quiz System | MCA Final Project</p>
+        <p>Developed by: J S Joshwin Lal Tennyson | Roll No: AA.SC.P2MCA2207425</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
